@@ -6,7 +6,7 @@ export type TTodoState = {
 export const defaultState: TTodoState = {
   currentWork: localStorage.currentWork
     ? localStorage.currentWork
-    : ((localStorage.currentWork = ""), "unknown task"),
+    : ((localStorage.currentWork = ""), "add task"),
   todoList: localStorage.todoList
     ? JSON.parse(localStorage.todoList)
     : ((localStorage.todoList = JSON.stringify([])), []),

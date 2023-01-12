@@ -9,7 +9,7 @@ import SettingsButton from "../components/UI/SettingButton";
 import { Container, Row, CurrentLine } from "../styles/components";
 import { useNavigate } from "react-router-dom";
 import { useActions } from "../hooks/useActions";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { baseTheme } from "../styles/theme";
 import { Modal } from "../components/UI/Modal";
 

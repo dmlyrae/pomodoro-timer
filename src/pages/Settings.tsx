@@ -15,7 +15,6 @@ const Settings = () => {
   const { workInterval, restInterval, soundOn } = useSelector(
     (store: any) => store.settings
   );
-  console.log("ins", workInterval, restInterval);
 
   return (
     <>

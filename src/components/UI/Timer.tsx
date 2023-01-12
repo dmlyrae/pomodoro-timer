@@ -23,7 +23,6 @@ const Timer = ({ pause }: { pause: boolean }) => {
     (store: any) => store.status
   );
 
-  // const [intervalStartTime, setIntervalStartTime] = useState(0);
   const ticktackSounds = [
     useSound(tickTackMp3, { volume: 1 }),
     useSound(tickTackMp3, { volume: 1 }),
@@ -57,7 +56,6 @@ const Timer = ({ pause }: { pause: boolean }) => {
   }, [time, now]);
 
   const remainTime = useMemo(() => {
-    // console.log("time", time);
     const currentInterval = now === "work" ? workInterval : restInterval;
     const mainSeconds = Math.round(time / 1000);
     const allSeconds = Math.round((currentInterval - time) / 1000);

@@ -16,7 +16,7 @@ export const statusReducer: any = (
       }
       return { ...state, time: state.time + 1000, lastTick: timeNow };
     case statusActions.truncateTime:
-      return { ...state, startTime: Date.now() - state.time };
+      return { ...state, startTime: Date.now() - state.time + 1000 };
     case statusActions.setNowValue:
       if (action.payload === state.now) return state;
       return { ...state, now: action.payload };
